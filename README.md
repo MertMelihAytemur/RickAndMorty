@@ -15,3 +15,5 @@ To run this project locally, follow these steps:
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/your-repository-name.git
+
+<img width="370" alt="Ekran Resmi 2024-09-16 22 24 31" src="https://github.com/user-attachments/assets/ac4d7d2b-9b2e-4070-abc5-9b34d0a51449">
