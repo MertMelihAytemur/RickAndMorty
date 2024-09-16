@@ -17,6 +17,12 @@
 		30745E4D2C98A2D50075ECB1 /* RickAndMortyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30745E4C2C98A2D50075ECB1 /* RickAndMortyTests.swift */; };
 		30745E572C98A2D50075ECB1 /* RickAndMortyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30745E562C98A2D50075ECB1 /* RickAndMortyUITests.swift */; };
 		30745E592C98A2D50075ECB1 /* RickAndMortyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30745E582C98A2D50075ECB1 /* RickAndMortyUITestsLaunchTests.swift */; };
+		30745E6A2C98A6450075ECB1 /* RickAndMortyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30745E692C98A6440075ECB1 /* RickAndMortyResponse.swift */; };
+		30745E6C2C98A7420075ECB1 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30745E6B2C98A7420075ECB1 /* ApiService.swift */; };
+		30745E732C98A8F80075ECB1 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30745E722C98A8F80075ECB1 /* HomeViewModel.swift */; };
+		30745E752C98A9530075ECB1 /* CharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30745E742C98A9530075ECB1 /* CharacterTableViewCell.swift */; };
+		3080FB552C98AFE4006EFC92 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 3080FB542C98AFE4006EFC92 /* Alamofire */; };
+		3080FB582C98B18B006EFC92 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 3080FB572C98B18B006EFC92 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,10 @@
 		30745E522C98A2D50075ECB1 /* RickAndMortyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RickAndMortyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30745E562C98A2D50075ECB1 /* RickAndMortyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyUITests.swift; sourceTree = "<group>"; };
 		30745E582C98A2D50075ECB1 /* RickAndMortyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		30745E692C98A6440075ECB1 /* RickAndMortyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyResponse.swift; sourceTree = "<group>"; };
+		30745E6B2C98A7420075ECB1 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		30745E722C98A8F80075ECB1 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		30745E742C98A9530075ECB1 /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3080FB582C98B18B006EFC92 /* Kingfisher in Frameworks */,
+				3080FB552C98AFE4006EFC92 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +113,10 @@
 		30745E312C98A2D40075ECB1 /* RickAndMorty */ = {
 			isa = PBXGroup;
 			children = (
+				30745E682C98A5DE0075ECB1 /* viewmodel */,
+				30745E672C98A59E0075ECB1 /* model */,
+				30745E662C98A5970075ECB1 /* services */,
+				30745E652C98A4DD0075ECB1 /* ui */,
 				30745E322C98A2D40075ECB1 /* AppDelegate.swift */,
 				30745E342C98A2D40075ECB1 /* SceneDelegate.swift */,
 				30745E362C98A2D40075ECB1 /* ViewController.swift */,
@@ -130,6 +146,38 @@
 			path = RickAndMortyUITests;
 			sourceTree = "<group>";
 		};
+		30745E652C98A4DD0075ECB1 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				30745E742C98A9530075ECB1 /* CharacterTableViewCell.swift */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		30745E662C98A5970075ECB1 /* services */ = {
+			isa = PBXGroup;
+			children = (
+				30745E6B2C98A7420075ECB1 /* ApiService.swift */,
+			);
+			path = services;
+			sourceTree = "<group>";
+		};
+		30745E672C98A59E0075ECB1 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				30745E692C98A6440075ECB1 /* RickAndMortyResponse.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		30745E682C98A5DE0075ECB1 /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				30745E722C98A8F80075ECB1 /* HomeViewModel.swift */,
+			);
+			path = viewmodel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,6 +194,10 @@
 			dependencies = (
 			);
 			name = RickAndMorty;
+			packageProductDependencies = (
+				3080FB542C98AFE4006EFC92 /* Alamofire */,
+				3080FB572C98B18B006EFC92 /* Kingfisher */,
+			);
 			productName = RickAndMorty;
 			productReference = 30745E2F2C98A2D40075ECB1 /* RickAndMorty.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +270,10 @@
 				Base,
 			);
 			mainGroup = 30745E262C98A2D40075ECB1;
+			packageReferences = (
+				3080FB532C98AFE4006EFC92 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				3080FB562C98B18B006EFC92 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 30745E302C98A2D40075ECB1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -261,10 +317,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30745E6A2C98A6450075ECB1 /* RickAndMortyResponse.swift in Sources */,
 				30745E3D2C98A2D40075ECB1 /* RickAndMorty.xcdatamodeld in Sources */,
+				30745E732C98A8F80075ECB1 /* HomeViewModel.swift in Sources */,
+				30745E6C2C98A7420075ECB1 /* ApiService.swift in Sources */,
 				30745E372C98A2D40075ECB1 /* ViewController.swift in Sources */,
 				30745E332C98A2D40075ECB1 /* AppDelegate.swift in Sources */,
 				30745E352C98A2D40075ECB1 /* SceneDelegate.swift in Sources */,
+				30745E752C98A9530075ECB1 /* CharacterTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -605,6 +665,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3080FB532C98AFE4006EFC92 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+		3080FB562C98B18B006EFC92 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.12.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3080FB542C98AFE4006EFC92 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3080FB532C98AFE4006EFC92 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		3080FB572C98B18B006EFC92 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3080FB562C98B18B006EFC92 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		30745E3B2C98A2D40075ECB1 /* RickAndMorty.xcdatamodeld */ = {
